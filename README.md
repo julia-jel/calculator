@@ -1,2 +1,2 @@
 # calculator
-Calculator with a formula logic developed in React.js
+Javascript calculator with a formula logic developed in React
