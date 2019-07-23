@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Quantico");
+
+body {
+  background-color: #c9e085;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Quantico", sans-serif;
+}
+
+#calculator {
+  padding: 0px;
+  width: 320px;
+  
+  border: 5px solid black;
+}
+
+#pads {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 70px);
+  grid-gap: 1px;
+  grid-template-areas:
+    "clear clear divide multiply"
+    "seven eight nine subtract"
+    "four five six add"
+    "one two three equals"
+    "zero zero decimal equals"
+}
+
+.buttons {
+  border: none;
+  font-family: Quantico;
+  font-size: 18px;
+  outline: none;
+}
+
+.buttons:hover {
+  color: white;
+  outline: 2px solid lightgrey;
+  z-index: 2;
+}
+
+#divide {grid-area: divide;}
+#multiply {grid-area: multiply;}
+#subtract {grid-area: subtract;}
+#add {grid-area: add;}
+#one {grid-area: one;}
+#two {grid-area: two;}
+#three {grid-area: three;}
+#seven {grid-area: seven;}
+#eight {grid-area: eight;}
+#nine {grid-area: nine;}
+#zero {grid-area: zero;}
+#decimal {grid-area: decimal;}
+
+#clear {
+  grid-area: clear;
+  background-color: #A52A2A;
+}
+
+#equals {
+  grid-area: equals;
+  background-color: #2b69a6;
+}
+
+.operator-buttons {
+  background-color: #87a62b;
+}
+
+.num-buttons {
+  background-color: grey;
+}
+
+.screens {
+  background-color: black;
+  min-height: 30px;
+  text-align: right;
+  padding-right: 3px;
+}
+
+#display {
+  color: orange;
+  font-size: 24px;
+  padding-bottom: 6px;
+}
+
+#formula {
+  color: white;
+  font-size: 18px;
+}
+
+#footer {
+  text-align: center;
+}
+
+.highlighted-text {
+  color: #A52A2A;
+}
